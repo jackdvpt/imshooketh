@@ -19,11 +19,13 @@
     font-weight: normal;
     color: #ffffff;
     text-shadow: #000000 0px 0px 7px;
-    font-family: Netflix Sans,Helvetica Nueue,Helvetica,Arial,sans-serif;
+    font-family: 'Sora', sans-serif;
     }
     </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap" rel="stylesheet">
     <script>
     $(document).ready(function(){
         $("#myTextarea").keyup(function(){
@@ -45,24 +47,11 @@ $('document').ready(function(){
     }
   });
 });
-$("#download").on('click', function () {
-  var imgageData = getCanvas.toDataURL("image/png");
-  // Now browser starts downloading it instead of just showing it
-  var newData = imageData.replace(/^data:image\/png/, "data:application/octet-stream");
-  $("#download").attr("download", "image.png").attr("href", newData);
-});
     </script>
     <body>
         
-        <div id="imageDIV" style="padding: 10px; background: #f5da55">
-            <h4 style="color: #000; ">Hello world!</h4>
-        </div>
-        <div id="download" style="padding: 10px; background: #f5da55">
-        </div>
-        <div id="imagepreview" style="padding: 10px; background: #f5da55">
-        </div>
         <form>
-            <textarea id="myTextarea" rows="5" cols="60" placeholder="Type something here..."></textarea>
+            <textarea id="myTextarea" rows="5" cols="60" placeholder="our maple trees always provide"></textarea>
         </form>
         
         <div class="container">
